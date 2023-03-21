@@ -50,12 +50,19 @@ img {
     overflow: hidden;
 }
 
+@media screen and (min-width: 800px) {
+
+    #button,
+    #quiz-div {
+        width: 35%;
+    }
+}
+
 #points-div {
     height: 16rem;
     width: 90%;
     align-items: center;
 }
-
 
 h4 {
     font-family: 'Inter', sans-serif;
@@ -114,5 +121,3 @@ label {
     padding-left: 1rem;
     font-family: 'Inter', sans-serif;
 }
-
-/*TODO Desktop style*/
