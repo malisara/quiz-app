@@ -90,7 +90,7 @@ function handleHoverAndClickStyles() {
         });
 
         ans.addEventListener('mouseout', function () {
-            if (ans.childNodes[1].checked === false) {
+            if (!ans.childNodes[1].checked) {
                 ans.style.backgroundColor = '#e6cff5';
             }
         });

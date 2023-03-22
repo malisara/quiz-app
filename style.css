@@ -2,7 +2,6 @@ body {
     background: linear-gradient(128deg, hsl(240, 35%, 45%) 46%, rgba(140, 120, 176, 1) 100%);
     min-height: 100vH;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -24,6 +23,7 @@ body {
     font-size: 1.2rem;
     position: absolute;
     top: 45%;
+    cursor: pointer;
 }
 
 #button:hover {
@@ -48,20 +48,30 @@ img {
     height: 25rem;
     width: 95%;
     overflow: hidden;
-}
-
-@media screen and (min-width: 800px) {
-
-    #button,
-    #quiz-div {
-        width: 35%;
-    }
+    margin-top: 40%;
 }
 
 #points-div {
     height: 16rem;
     width: 90%;
     align-items: center;
+    margin-top: 50%;
+}
+
+@media screen and (min-width: 900px) {
+
+    #start,
+    #quiz-div,
+    #points-div {
+        width: 35%;
+        margin-top: 8rem;
+
+    }
+
+    #button {
+        width: 20%;
+        margin-top: 2rem;
+    }
 }
 
 h4 {
@@ -100,6 +110,7 @@ h4 {
     font-size: 1.3rem;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    cursor: pointer;
 }
 
 #submit-button:hover {
